@@ -5,7 +5,7 @@ import java.util.List;
 public class EasyUIDataGridResult {
 
 	private long total;
-	
+
 	private List<?> rows;
 
 	public long getTotal() {

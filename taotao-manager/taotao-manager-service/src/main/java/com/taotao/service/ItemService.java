@@ -10,5 +10,5 @@ public interface ItemService {
 	
 	public EasyUIDataGridResult getItemListByPage(int page,int rows);
 	
-	TaotaoResult addItem(TbItem item);
+	TaotaoResult addItem(TbItem item, String desc) throws Exception;
 }

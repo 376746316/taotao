@@ -31,8 +31,8 @@ public class ItemController {
 	}
 
 	@RequestMapping(value = "/item/save", method = RequestMethod.POST)
-	public @ResponseBody TaotaoResult addItem(TbItem item, String desc) throws Exception {
-		return itemService.addItem(item, desc);
+	public @ResponseBody TaotaoResult addItem(TbItem item, String desc, String itemParams) throws Exception {
+		return itemService.addItem(item, desc, itemParams);
 	}
 
 }

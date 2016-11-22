@@ -24,7 +24,7 @@ public class ItemParmServiceIml implements ItemParamService {
 		TbItemParamExample example = new TbItemParamExample();
 		Criteria criteria = example.createCriteria();
 		criteria.andItemCatIdEqualTo(cid);
-		List<TbItemParam> list = itemParamMapper.selectByExample(example);
+		List<TbItemParam> list = itemParamMapper.selectByExampleWithBLOBs(example);
 		// 判断是否查询到结果
 		if (list != null && list.size() > 0) {
 			return TaotaoResult.ok(list.get(0));
